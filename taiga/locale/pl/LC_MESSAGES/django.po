@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taiga-back\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-20 09:45+0100\n"
-"PO-Revision-Date: 2017-01-20 08:45+0000\n"
+"POT-Creation-Date: 2017-01-25 17:38+0100\n"
+"PO-Revision-Date: 2017-01-25 16:39+0000\n"
 "Last-Translator: Taiga Dev Team <support@taiga.io>\n"
 "Language-Team: Polish (http://www.transifex.com/taiga-agile-llc/taiga-back/"
 "language/pl/)\n"
@@ -59,8 +59,8 @@ msgid "Error on creating new user."
 msgstr "Błąd przy tworzeniu użytkownika."
 
 #: taiga/auth/tokens.py:49 taiga/auth/tokens.py:56
-#: taiga/external_apps/services.py:34 taiga/projects/api.py:366
-#: taiga/projects/api.py:387
+#: taiga/external_apps/services.py:34 taiga/projects/api.py:374
+#: taiga/projects/api.py:395
 msgid "Invalid token"
 msgstr "Nieprawidłowy token"
 
@@ -193,12 +193,12 @@ msgstr ""
 "jest uszkodzony."
 
 #: taiga/base/api/mixins.py:284 taiga/base/exceptions.py:211
-#: taiga/hooks/api.py:69 taiga/projects/api.py:401 taiga/projects/api.py:434
-#: taiga/projects/api.py:746 taiga/projects/epics/api.py:200
+#: taiga/hooks/api.py:69 taiga/projects/api.py:409 taiga/projects/api.py:442
+#: taiga/projects/api.py:754 taiga/projects/epics/api.py:200
 #: taiga/projects/epics/api.py:284 taiga/projects/issues/api.py:224
 #: taiga/projects/mixins/ordering.py:59 taiga/projects/tasks/api.py:247
-#: taiga/projects/tasks/api.py:272 taiga/projects/userstories/api.py:322
-#: taiga/projects/userstories/api.py:374 taiga/webhooks/api.py:71
+#: taiga/projects/tasks/api.py:272 taiga/projects/userstories/api.py:323
+#: taiga/projects/userstories/api.py:375 taiga/webhooks/api.py:71
 msgid "Blocked element"
 msgstr ""
 
@@ -869,7 +869,7 @@ msgstr ""
 #: taiga/projects/models.py:643 taiga/projects/models.py:663
 #: taiga/projects/models.py:683 taiga/projects/models.py:715
 #: taiga/projects/models.py:735 taiga/users/admin.py:54
-#: taiga/users/models.py:301 taiga/webhooks/models.py:29
+#: taiga/users/models.py:303 taiga/webhooks/models.py:29
 msgid "name"
 msgstr "nazwa"
 
@@ -883,7 +883,7 @@ msgstr "web"
 
 #: taiga/external_apps/models.py:39 taiga/projects/attachments/models.py:62
 #: taiga/projects/custom_attributes/models.py:37
-#: taiga/projects/epics/models.py:55
+#: taiga/projects/epics/models.py:56
 #: taiga/projects/history/templatetags/functions.py:25
 #: taiga/projects/issues/models.py:60 taiga/projects/models.py:152
 #: taiga/projects/models.py:739 taiga/projects/tasks/models.py:62
@@ -905,11 +905,11 @@ msgstr "użytkownik"
 msgid "application"
 msgstr "aplikacja"
 
-#: taiga/feedback/models.py:25 taiga/users/models.py:139
+#: taiga/feedback/models.py:25 taiga/users/models.py:140
 msgid "full name"
 msgstr "Imię i Nazwisko"
 
-#: taiga/feedback/models.py:27 taiga/users/models.py:134
+#: taiga/feedback/models.py:27 taiga/users/models.py:135
 msgid "email address"
 msgstr "adres e-mail"
 
@@ -920,7 +920,7 @@ msgstr "komentarz"
 #: taiga/feedback/models.py:31 taiga/projects/attachments/models.py:48
 #: taiga/projects/contact/models.py:34
 #: taiga/projects/custom_attributes/models.py:46
-#: taiga/projects/epics/models.py:48 taiga/projects/issues/models.py:52
+#: taiga/projects/epics/models.py:49 taiga/projects/issues/models.py:52
 #: taiga/projects/likes/models.py:33 taiga/projects/milestones/models.py:48
 #: taiga/projects/models.py:159 taiga/projects/models.py:743
 #: taiga/projects/notifications/models.py:89 taiga/projects/tasks/models.py:48
@@ -996,7 +996,7 @@ msgstr "Źródło nie jest prawidłowym plikiem json"
 
 #: taiga/hooks/api.py:63 taiga/projects/epics/api.py:154
 #: taiga/projects/issues/api.py:139 taiga/projects/tasks/api.py:201
-#: taiga/projects/userstories/api.py:276
+#: taiga/projects/userstories/api.py:277
 msgid "The project doesn't exist"
 msgstr "Projekt nie istnieje"
 
@@ -1083,6 +1083,85 @@ msgstr "Element referencyjny nie istnieje"
 #: taiga/hooks/event_hooks.py:222
 msgid "The status doesn't exist"
 msgstr "Status nie istnieje"
+
+#: taiga/importers/asana/api.py:44 taiga/importers/asana/api.py:86
+#: taiga/importers/github/api.py:45 taiga/importers/github/api.py:75
+#: taiga/importers/jira/api.py:56 taiga/importers/jira/api.py:102
+#: taiga/importers/pivotal/api.py:44 taiga/importers/pivotal/api.py:81
+#: taiga/importers/trello/api.py:46 taiga/importers/trello/api.py:83
+msgid "The project param is needed"
+msgstr ""
+
+#: taiga/importers/asana/api.py:51 taiga/importers/asana/api.py:74
+#: taiga/importers/asana/api.py:133
+msgid "Invalid Asana API request"
+msgstr ""
+
+#: taiga/importers/asana/api.py:53 taiga/importers/asana/api.py:76
+#: taiga/importers/asana/api.py:135
+msgid "Failed to make the request to Asana API"
+msgstr ""
+
+#: taiga/importers/asana/api.py:128 taiga/importers/github/api.py:121
+msgid "Code param needed"
+msgstr ""
+
+#: taiga/importers/asana/tasks.py:40 taiga/importers/asana/tasks.py:41
+msgid "Error importing Asana project"
+msgstr ""
+
+#: taiga/importers/github/api.py:129
+msgid "Invalid auth data"
+msgstr ""
+
+#: taiga/importers/github/api.py:131
+msgid "Third party service failing"
+msgstr ""
+
+#: taiga/importers/github/tasks.py:40 taiga/importers/github/tasks.py:41
+msgid "Error importing GitHub project"
+msgstr ""
+
+#: taiga/importers/jira/api.py:58 taiga/importers/jira/api.py:85
+#: taiga/importers/jira/api.py:105 taiga/importers/jira/api.py:177
+msgid "The url param is needed"
+msgstr ""
+
+#: taiga/importers/jira/api.py:153
+msgid "Invalid project_type {}"
+msgstr ""
+
+#: taiga/importers/jira/api.py:223 taiga/importers/pivotal/api.py:139
+#: taiga/importers/trello/api.py:143
+msgid "Invalid or expired auth token"
+msgstr ""
+
+#: taiga/importers/jira/tasks.py:40 taiga/importers/jira/tasks.py:41
+msgid "Error importing Jira project"
+msgstr ""
+
+#: taiga/importers/pivotal/tasks.py:40 taiga/importers/pivotal/tasks.py:41
+msgid "Error importing PivotalTracker project"
+msgstr ""
+
+#: taiga/importers/trello/importer.py:77
+#, python-format
+msgid "Invalid Request: %s at %s"
+msgstr ""
+
+#: taiga/importers/trello/importer.py:79 taiga/importers/trello/importer.py:81
+#, python-format
+msgid "Unauthorized: %s at %s"
+msgstr ""
+
+#: taiga/importers/trello/importer.py:83 taiga/importers/trello/importer.py:85
+#, python-format
+msgid "Resource Unavailable: %s at %s"
+msgstr ""
+
+#: taiga/importers/trello/tasks.py:40 taiga/importers/trello/tasks.py:41
+msgid "Error importing Trello project"
+msgstr ""
 
 #: taiga/permissions/choices.py:23 taiga/permissions/choices.py:34
 msgid "View project"
@@ -1269,7 +1348,7 @@ msgid "Fans"
 msgstr ""
 
 #: taiga/projects/admin.py:144 taiga/projects/attachments/models.py:39
-#: taiga/projects/epics/models.py:39 taiga/projects/issues/models.py:37
+#: taiga/projects/epics/models.py:40 taiga/projects/issues/models.py:37
 #: taiga/projects/milestones/models.py:42 taiga/projects/models.py:164
 #: taiga/projects/notifications/models.py:62 taiga/projects/tasks/models.py:39
 #: taiga/projects/userstories/models.py:69 taiga/projects/wiki/models.py:40
@@ -1300,41 +1379,41 @@ msgstr ""
 msgid "Delete selected %(verbose_name_plural)s"
 msgstr ""
 
-#: taiga/projects/api.py:152 taiga/users/api.py:244
+#: taiga/projects/api.py:160 taiga/users/api.py:244
 msgid "Incomplete arguments"
 msgstr "Pola niekompletne"
 
-#: taiga/projects/api.py:156 taiga/users/api.py:249
+#: taiga/projects/api.py:164 taiga/users/api.py:249
 msgid "Invalid image format"
 msgstr "Niepoprawny format obrazka"
 
-#: taiga/projects/api.py:217
+#: taiga/projects/api.py:225
 msgid "Not valid template name"
 msgstr "Nieprawidłowa nazwa szablonu"
 
-#: taiga/projects/api.py:220
+#: taiga/projects/api.py:228
 msgid "Not valid template description"
 msgstr "Nieprawidłowy opis szablonu"
 
-#: taiga/projects/api.py:346
+#: taiga/projects/api.py:354
 msgid "Invalid user id"
 msgstr ""
 
-#: taiga/projects/api.py:352
+#: taiga/projects/api.py:360
 msgid "The user doesn't exist"
 msgstr ""
 
-#: taiga/projects/api.py:356
+#: taiga/projects/api.py:364
 msgid "The user must be already a project member"
 msgstr ""
 
-#: taiga/projects/api.py:777
+#: taiga/projects/api.py:785
 msgid ""
 "The project must have an owner and at least one of the users must be an "
 "active admin"
 msgstr ""
 
-#: taiga/projects/api.py:811
+#: taiga/projects/api.py:819
 msgid "You don't have permisions to see that."
 msgstr "Nie masz uprawnień by to zobaczyć."
 
@@ -1352,7 +1431,7 @@ msgstr "ID nie pasuje pomiędzy obiektem a projektem"
 
 #: taiga/projects/attachments/models.py:41 taiga/projects/contact/models.py:29
 #: taiga/projects/custom_attributes/models.py:43
-#: taiga/projects/epics/models.py:37 taiga/projects/issues/models.py:50
+#: taiga/projects/epics/models.py:38 taiga/projects/issues/models.py:50
 #: taiga/projects/milestones/models.py:44 taiga/projects/models.py:506
 #: taiga/projects/models.py:528 taiga/projects/models.py:565
 #: taiga/projects/models.py:593 taiga/projects/models.py:619
@@ -1361,7 +1440,7 @@ msgstr "ID nie pasuje pomiędzy obiektem a projektem"
 #: taiga/projects/notifications/models.py:74
 #: taiga/projects/notifications/models.py:91 taiga/projects/tasks/models.py:43
 #: taiga/projects/userstories/models.py:67 taiga/projects/wiki/models.py:34
-#: taiga/projects/wiki/models.py:72 taiga/users/models.py:312
+#: taiga/projects/wiki/models.py:72 taiga/users/models.py:314
 msgid "project"
 msgstr "projekt"
 
@@ -1375,7 +1454,7 @@ msgstr "id obiektu"
 
 #: taiga/projects/attachments/models.py:51
 #: taiga/projects/custom_attributes/models.py:48
-#: taiga/projects/epics/models.py:51 taiga/projects/issues/models.py:55
+#: taiga/projects/epics/models.py:52 taiga/projects/issues/models.py:55
 #: taiga/projects/milestones/models.py:51 taiga/projects/models.py:162
 #: taiga/projects/models.py:746 taiga/projects/tasks/models.py:51
 #: taiga/projects/userstories/models.py:90 taiga/projects/wiki/models.py:47
@@ -1396,17 +1475,17 @@ msgid "is deprecated"
 msgstr "jest przestarzałe"
 
 #: taiga/projects/attachments/models.py:61
-msgid "from_comment"
+msgid "from comment"
 msgstr ""
 
 #: taiga/projects/attachments/models.py:63
 #: taiga/projects/custom_attributes/models.py:41
-#: taiga/projects/epics/models.py:101 taiga/projects/milestones/models.py:57
+#: taiga/projects/epics/models.py:104 taiga/projects/milestones/models.py:57
 #: taiga/projects/models.py:522 taiga/projects/models.py:555
 #: taiga/projects/models.py:589 taiga/projects/models.py:613
 #: taiga/projects/models.py:645 taiga/projects/models.py:665
 #: taiga/projects/models.py:687 taiga/projects/models.py:717
-#: taiga/projects/wiki/models.py:77 taiga/users/models.py:307
+#: taiga/projects/wiki/models.py:77 taiga/users/models.py:309
 msgid "order"
 msgstr "kolejność"
 
@@ -1544,49 +1623,54 @@ msgstr "Już istnieje jeden z taką nazwą."
 msgid "You don't have permissions to set this status to this epic."
 msgstr ""
 
-#: taiga/projects/epics/models.py:35 taiga/projects/issues/models.py:35
+#: taiga/projects/epics/models.py:36 taiga/projects/issues/models.py:35
 #: taiga/projects/tasks/models.py:37 taiga/projects/userstories/models.py:62
 msgid "ref"
 msgstr "ref"
 
-#: taiga/projects/epics/models.py:42 taiga/projects/issues/models.py:39
+#: taiga/projects/epics/models.py:43 taiga/projects/issues/models.py:39
 #: taiga/projects/tasks/models.py:41 taiga/projects/userstories/models.py:72
 msgid "status"
 msgstr "status"
 
-#: taiga/projects/epics/models.py:45
+#: taiga/projects/epics/models.py:46
 msgid "epics order"
 msgstr ""
 
-#: taiga/projects/epics/models.py:54 taiga/projects/issues/models.py:59
+#: taiga/projects/epics/models.py:55 taiga/projects/issues/models.py:59
 #: taiga/projects/tasks/models.py:55 taiga/projects/userstories/models.py:94
 msgid "subject"
 msgstr "temat"
 
-#: taiga/projects/epics/models.py:58 taiga/projects/models.py:526
+#: taiga/projects/epics/models.py:59 taiga/projects/models.py:526
 #: taiga/projects/models.py:561 taiga/projects/models.py:617
 #: taiga/projects/models.py:647 taiga/projects/models.py:667
 #: taiga/projects/models.py:691 taiga/projects/models.py:719
-#: taiga/users/models.py:141
+#: taiga/users/models.py:142
 msgid "color"
 msgstr "kolor"
 
-#: taiga/projects/epics/models.py:61 taiga/projects/issues/models.py:63
+#: taiga/projects/epics/models.py:62 taiga/projects/issues/models.py:63
 #: taiga/projects/tasks/models.py:65 taiga/projects/userstories/models.py:98
 msgid "assigned to"
 msgstr "przypisane do"
 
-#: taiga/projects/epics/models.py:63 taiga/projects/userstories/models.py:100
+#: taiga/projects/epics/models.py:64 taiga/projects/userstories/models.py:100
 msgid "is client requirement"
 msgstr "wymaganie klienta"
 
-#: taiga/projects/epics/models.py:65 taiga/projects/userstories/models.py:102
+#: taiga/projects/epics/models.py:66 taiga/projects/userstories/models.py:102
 msgid "is team requirement"
 msgstr "wymaganie zespołu"
 
-#: taiga/projects/epics/models.py:69
+#: taiga/projects/epics/models.py:70
 msgid "user stories"
 msgstr ""
+
+#: taiga/projects/epics/models.py:72 taiga/projects/issues/models.py:66
+#: taiga/projects/tasks/models.py:70 taiga/projects/userstories/models.py:109
+msgid "external reference"
+msgstr "źródło zgłoszenia"
 
 #: taiga/projects/epics/validators.py:37
 msgid "There's no epic with that id"
@@ -1770,11 +1854,6 @@ msgstr "kamień milowy"
 msgid "finished date"
 msgstr "data zakończenia"
 
-#: taiga/projects/issues/models.py:66 taiga/projects/tasks/models.py:70
-#: taiga/projects/userstories/models.py:109
-msgid "external reference"
-msgstr "źródło zgłoszenia"
-
 #: taiga/projects/likes/models.py:36
 msgid "Like"
 msgstr ""
@@ -1787,7 +1866,7 @@ msgstr ""
 #: taiga/projects/models.py:520 taiga/projects/models.py:553
 #: taiga/projects/models.py:611 taiga/projects/models.py:685
 #: taiga/projects/models.py:737 taiga/projects/wiki/models.py:36
-#: taiga/users/admin.py:58 taiga/users/models.py:303
+#: taiga/users/admin.py:58 taiga/users/models.py:305
 msgid "slug"
 msgstr "slug"
 
@@ -1846,7 +1925,7 @@ msgstr "e-mail"
 msgid "create at"
 msgstr "utwórz na"
 
-#: taiga/projects/models.py:83 taiga/users/models.py:156
+#: taiga/projects/models.py:83 taiga/users/models.py:157
 msgid "token"
 msgstr "token"
 
@@ -3751,27 +3830,27 @@ msgstr "Właściciel produktu"
 msgid "Stakeholder"
 msgstr "Interesariusz"
 
-#: taiga/projects/userstories/api.py:127
+#: taiga/projects/userstories/api.py:128
 msgid "You don't have permissions to set this sprint to this user story."
 msgstr ""
 "Nie masz uprawnień do ustawiania sprintu dla tej historyjki użytkownika."
 
-#: taiga/projects/userstories/api.py:131
+#: taiga/projects/userstories/api.py:132
 msgid "You don't have permissions to set this status to this user story."
 msgstr ""
 "Nie masz uprawnień do ustawiania statusu do tej historyjki użytkownika."
 
-#: taiga/projects/userstories/api.py:221
+#: taiga/projects/userstories/api.py:222
 #, python-brace-format
 msgid "Invalid role id '{role_id}'"
 msgstr ""
 
-#: taiga/projects/userstories/api.py:228
+#: taiga/projects/userstories/api.py:229
 #, python-brace-format
 msgid "Invalid points id '{points_id}'"
 msgstr ""
 
-#: taiga/projects/userstories/api.py:243
+#: taiga/projects/userstories/api.py:244
 #, python-brace-format
 msgid "Generating the user story #{ref} - {subject}"
 msgstr ""
@@ -4002,11 +4081,11 @@ msgstr ""
 msgid "Invalid, are you sure the token is correct?"
 msgstr "Niepoprawne, jesteś pewien, że token jest poprawny?"
 
-#: taiga/users/models.py:97
+#: taiga/users/models.py:98
 msgid "superuser status"
 msgstr "status SUPERUSER"
 
-#: taiga/users/models.py:98
+#: taiga/users/models.py:99
 msgid ""
 "Designates that this user has all permissions without explicitly assigning "
 "them."
@@ -4014,24 +4093,24 @@ msgstr ""
 "Oznacza, że ten użytkownik posiada wszystkie uprawnienia bez konieczności "
 "ich przydzielania."
 
-#: taiga/users/models.py:128
+#: taiga/users/models.py:129
 msgid "username"
 msgstr "nazwa użytkownika"
 
-#: taiga/users/models.py:129
+#: taiga/users/models.py:130
 msgid ""
 "Required. 30 characters or fewer. Letters, numbers and /./-/_ characters"
 msgstr "Wymagane. 30 znaków. Liter, cyfr i znaków /./-/_"
 
-#: taiga/users/models.py:132
+#: taiga/users/models.py:133
 msgid "Enter a valid username."
 msgstr "Wprowadź poprawną nazwę użytkownika"
 
-#: taiga/users/models.py:135
+#: taiga/users/models.py:136
 msgid "active"
 msgstr "aktywny"
 
-#: taiga/users/models.py:136
+#: taiga/users/models.py:137
 msgid ""
 "Designates whether this user should be treated as active. Unselect this "
 "instead of deleting accounts."
@@ -4039,59 +4118,59 @@ msgstr ""
 "Oznacza, że ten użytkownik ma być traktowany jako aktywny. Możesz to "
 "odznaczyć zamiast usuwać konto."
 
-#: taiga/users/models.py:142
+#: taiga/users/models.py:143
 msgid "biography"
 msgstr "biografia"
 
-#: taiga/users/models.py:145
+#: taiga/users/models.py:146
 msgid "photo"
 msgstr "zdjęcie"
 
-#: taiga/users/models.py:146
+#: taiga/users/models.py:147
 msgid "date joined"
 msgstr "data dołączenia"
 
-#: taiga/users/models.py:148
+#: taiga/users/models.py:149
 msgid "default language"
 msgstr "domyślny język Taiga"
 
-#: taiga/users/models.py:150
+#: taiga/users/models.py:151
 msgid "default theme"
 msgstr "domyślny szablon Taiga"
 
-#: taiga/users/models.py:152
+#: taiga/users/models.py:153
 msgid "default timezone"
 msgstr "domyśla strefa czasowa"
 
-#: taiga/users/models.py:154
+#: taiga/users/models.py:155
 msgid "colorize tags"
 msgstr "kolory tagów"
 
-#: taiga/users/models.py:159
+#: taiga/users/models.py:160
 msgid "email token"
 msgstr "tokem e-mail"
 
-#: taiga/users/models.py:161
+#: taiga/users/models.py:162
 msgid "new email address"
 msgstr "nowy adres e-mail"
 
-#: taiga/users/models.py:168
+#: taiga/users/models.py:169
 msgid "max number of owned private projects"
 msgstr ""
 
-#: taiga/users/models.py:171
+#: taiga/users/models.py:172
 msgid "max number of owned public projects"
 msgstr ""
 
-#: taiga/users/models.py:174
+#: taiga/users/models.py:175
 msgid "max number of memberships for each owned private project"
 msgstr ""
 
-#: taiga/users/models.py:178
+#: taiga/users/models.py:179
 msgid "max number of memberships for each owned public project"
 msgstr ""
 
-#: taiga/users/models.py:305
+#: taiga/users/models.py:307
 msgid "permissions"
 msgstr "uprawnienia"
 
